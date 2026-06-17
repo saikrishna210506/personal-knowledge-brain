@@ -69,10 +69,14 @@ if st.sidebar.button("🗑 Clear Chat"):
 st.sidebar.markdown("---")
 
 st.sidebar.subheader("🧠 Agent Memory")
+import os
 
 for key, value in st.session_state.memory.items():
     st.sidebar.info(f"{key}: {value}")
+
 if uploaded_files:
+
+    os.makedirs("uploads", exist_ok=True)
 
     for uploaded_file in uploaded_files:
 
