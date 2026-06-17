@@ -6,6 +6,9 @@ if "chat_history" not in st.session_state:
 if "memory" not in st.session_state:
     st.session_state.memory = {}
 
+if "uploader_key" not in st.session_state:
+    st.session_state.uploader_key = 0
+
 if "processed_files" not in st.session_state:
     st.session_state.processed_files = []
     
@@ -33,7 +36,8 @@ if "all_uploaded_files" not in st.session_state:
 uploaded_files = st.file_uploader(
     "Upload PDFs",
     type=["pdf"],
-    accept_multiple_files=True
+    accept_multiple_files=True,
+    key=f"uploader_{st.session_state.uploader_key}"
 )
 
 if uploaded_files:
@@ -59,6 +63,7 @@ if uploaded_files:
         st.sidebar.write(f"📄 {file.name}")
 
 if st.sidebar.button("➕ Add More PDFs"):
+    st.session_state.uploader_key += 1
     st.rerun()
 
 if st.sidebar.button("🗑 Clear Chat"):
