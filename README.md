@@ -1,6 +1,6 @@
 # 🧠 Personal Knowledge Brain
 
-An AI-powered knowledge management system built using Streamlit, ChromaDB, Sentence Transformers, and Google Gemini. It enables users to upload multiple PDFs, perform semantic search, maintain conversational history, and leverage agent memory for context-aware responses.
+An AI-powered knowledge management system built using Streamlit, ChromaDB, Sentence Transformers, and Google Gemini.
 
 ---
 
@@ -29,6 +29,26 @@ An AI-powered knowledge management system built using Streamlit, ChromaDB, Sente
 
 ---
 
+## 📸 Screenshots
+
+### 🏠 Home Page
+
+![Home](images/home.png)
+
+### 📂 Upload Documents
+
+![Upload](images/upload.png)
+
+### 💬 Chat Interface
+
+![Chat](images/chat.png)
+
+### 🧠 Agent Memory
+
+![Memory](images/memory.png)
+
+---
+
 ## 🛠 Tech Stack
 
 - Python
@@ -38,6 +58,8 @@ An AI-powered knowledge management system built using Streamlit, ChromaDB, Sente
 - Google Gemini API
 - PyMuPDF
 - Scikit-learn
+
+...
 
 ---
 
