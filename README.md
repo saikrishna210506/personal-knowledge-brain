@@ -1,5 +1,11 @@
 # 🧠 Personal Knowledge Brain
 
+![Python](https://img.shields.io/badge/Python-3.14-blue)
+![Streamlit](https://img.shields.io/badge/Streamlit-App-red)
+![Gemini](https://img.shields.io/badge/Gemini-2.5Flash-green)
+![ChromaDB](https://img.shields.io/badge/VectorDB-ChromaDB-purple)
+![License](https://img.shields.io/badge/License-MIT-yellow)
+
 An AI-powered knowledge management system built using Streamlit, ChromaDB, Sentence Transformers, and Google Gemini.
 
 ---
